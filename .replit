@@ -1,5 +1,5 @@
 [nix]
-packages = ["php"]
+packages = ["php", "gh"]
 
 [agent]
 expertMode = true
