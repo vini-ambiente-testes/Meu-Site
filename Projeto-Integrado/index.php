@@ -1,28 +1,30 @@
-<?php  include("includes/head.php"); ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrado</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
 <body>
-    <div class="bg-light">
-        <div class="container mt-5">
-            <div class="card shadow p-4">
-                <h3 class="text-center mb-4">Formulário de Contato</h3>
-                <form action="enviar.php" method="POST">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome:</label>
-                        <input type="text" class="form-control" name="nome" id="nome" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail:</label>
-                        <input type="email" class="form-control" name="email" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensagem" class="form-label">Mensagem:</label>
-                        <textarea class="form-control" name="mensagem" id="mensagem" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </div>
+<?php
+    $page = $_GET['page'] ?? 'home';
+    switch($page){
+        case 'home':
+            include 'includes/head.php';
+            include 'includes/carrossel.php';
+            include 'includes/secao.php';
+            include 'includes/cards.php';
+            include 'includes/footer.php';
+        break;
+  
+        case 'about':
+            include 'pages/about.php';
+            break;
+      /*default:
+            include 'pages/404.php';*/
+    }
+?>
 </body>
-
-<?php  include("includes/footer.php"); ?>
+</html>
