@@ -1,5 +1,5 @@
 <!-- NAVBAR: barra de navegação principal -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <!-- container: centraliza e limita a largura -->
     <div class="container">
       <!-- navbar-brand: nome/logo do site -->

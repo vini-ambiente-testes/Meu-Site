@@ -13,16 +13,25 @@
         switch($page){
             case 'home':
                 include 'includes/cabecalho.php';
+                include 'includes/inicial.php';
                 include 'includes/rodape.php';
             break;
             case 'sobre':
+                include 'includes/cabecalho.php';
                 include 'includes/sobre.php';
+                include 'includes/rodape.php';
+                
             break;
             case 'servicos':
+                include 'includes/cabecalho.php';
                 include 'includes/servicos.php';
+                include 'includes/rodape.php';
+                
             break;
             case 'contato':
+                include 'includes/cabecalho.php';
                 include 'includes/contato.php';
+                include 'includes/rodape.php';  
             break;
         }
 ?>
