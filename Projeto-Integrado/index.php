@@ -10,21 +10,21 @@
 <body>
 <?php
     $page = $_GET['page'] ?? 'home';
-    switch($page){
-        case 'home':
-            include 'includes/head.php';
-            include 'includes/carrossel.php';
-            include 'includes/secao.php';
-            include 'includes/cards.php';
-            include 'includes/footer.php';
-        break;
-  
-        case 'about':
-            include 'pages/about.php';
+        switch($page){
+            case 'home':
+                include 'includes/cabecalho.php';
+                include 'includes/rodape.php';
             break;
-      /*default:
-            include 'pages/404.php';*/
-    }
+            case 'sobre':
+                include 'includes/sobre.php';
+            break;
+            case 'servicos':
+                include 'includes/servicos.php';
+            break;
+            case 'contato':
+                include 'includes/contato.php';
+            break;
+        }
 ?>
 </body>
 </html>
